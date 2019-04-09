@@ -6,6 +6,16 @@ import pl.edu.ur.oopl5.companyAndEmployees.company.abstractClasses.AbstractPerso
  */
 public class Employee extends AbstractPerson implements EmployeeInterface {
 
+    String manager;
+    public Employee(String name, String surname, int age) {
+        super(name, surname, age);
+    }
+    
+        public Employee(String name, String surname, int age, String manager) {
+        super(name, surname, age);
+        this.manager = manager;
+    }
+
     @Override
     public String getName() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
